@@ -1,0 +1,17 @@
+[
+  {
+    "eventid": 1,
+    "title": "Tech Workshop 2024",
+    "description": "Advanced Web Development Workshop",
+    "date": "2024-05-15",
+    "time": "14:00",
+    "venue": "Main Auditorium",
+    "capacity": 100,
+    "organizer": "CSEA",
+    "tags": [
+      "technology",
+      "workshop",
+      "web-development"
+    ]
+  }
+]

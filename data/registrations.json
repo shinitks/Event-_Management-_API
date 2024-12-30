@@ -1,0 +1,10 @@
+[
+  {
+    "eventid": 1,
+    "studentId": "STU123",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "department": "Computer Science",
+    "year": 3
+  }
+]
