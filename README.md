@@ -1,4 +1,4 @@
-###Event Management API
+# ** Event Management API**
 A lightweight RESTful API built with Node.js and Express.js for managing college events. It supports:
 
 Event creation
@@ -11,7 +11,7 @@ Event updating and deletion
 
 JSON file-based data storage (no database needed)
 
-📁 File-Based Storage
+## **📁 File-Based Storage**
 Data is stored in local JSON files:
 
 ./data/events.json – stores event details
@@ -20,17 +20,18 @@ Data is stored in local JSON files:
 
 ./data/count.json – tracks number of registered participants per event
 
-⚙️ Setup Instructions
-1. Clone the Repository
+# **⚙️ Setup Instructions**
+Clone the Repository
 git clone https://github.com/shinitks/Event-_Management-_API
 cd Event-_Management-_API
-2. Install Dependencies
 
+Install Dependencies
 npm install
-3. Run the Server
 
+Run the Server
 node server.js
-Make sure the ./data/ directory exists with the following three files (you can create them manually if missing):
+
+Make sure the ./data/ directory exists with the following files:
 
 events.json: []
 
@@ -38,54 +39,47 @@ registrations.json: []
 
 count.json: []
 
-🚀 API Endpoints
-All endpoints are prefixed with /api/events
+## **🚀 API Endpoints**
+Base Route: /api/events
 
-📌 Create Event
-POST /api/events/create
-
+### **Create Event**
+POST /create
 Creates a new event.
 
-🧾 Register for an Event
-POST /api/events/register/:id
 
-Registers a student for a specific event. Automatically checks for available capacity.
+### **Register for an Event**
+POST /register/:id
+Registers a student for a specific event by ID.
 
-🔄 Update Event
-PUT /api/events/update/:id
+### **Update Event**
+PUT /update/:id
+Updates fields such as capacity or venue for a specific event.
 
-Updates event details.
+### **Delete Event**
+DELETE /:id
+Deletes an event and its associated registration and count data.
 
-❌ Delete Event
-DELETE /api/events/:id
+### **Get Event by ID**
+GET /:id
+Fetches details of a specific event.
 
-Deletes an event and all associated registration and count data.
+### **Get All Events**
+GET /all
+Returns a list of all available events.
 
-🔍 Get Event by ID
-GET /api/events/:id
+## **🛠 Possible Enhancements**
+Switch from file-based storage to a real database (MongoDB, PostgreSQL, etc.)
 
-Returns event details by ID.
+Add user authentication and authorization
 
-📃 Get All Events
-GET /api/events/all
+Add attendance and feedback features
 
-Returns a list of all events.
+Use middleware for input validation
 
+Write tests with tools like Jest or Mocha
 
-🛠 Possible Enhancements
-Switch to a real database (e.g., MongoDB or PostgreSQL)
+## **👤 Author**
+GitHub: @shinitks
 
-Add authentication and user roles
-
-Add attendance and feedback endpoints
-
-Validate inputs using middleware
-
-Add unit tests
-
-👤 Author
-@shinitks
-
-📄 License
+## **📄 License**
 This project is licensed under the MIT License.
-
