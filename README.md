@@ -1,15 +1,15 @@
 # **Event Management API**
 A lightweight RESTful API built with Node.js and Express.js for managing college events. It supports:
 
-.Event creation
+● Event creation
 
-.Participant registration
+● Participant registration
 
-.Capacity tracking
+● Capacity tracking
 
-.Event updating and deletion
+● Event updating and deletion
 
-.JSON file-based data storage (no database needed)
+● JSON file-based data storage (no database needed)
 
 ## **📁 File-Based Storage**
 Data is stored in local JSON files:
@@ -21,26 +21,22 @@ Data is stored in local JSON files:
 ./data/count.json – tracks number of registered participants per event
 
 # **⚙️ Setup Instructions**
-Clone the Repository
+➥ Clone the Repository -
 git clone https://github.com/shinitks/Event-_Management-_API
 
-cd Event-_Management-_API
+➥ cd Event-_Management-_API
 
-Install Dependencies
+➥ Install Dependencies - npm install
 
-npm install
+➥ Run the Server - node server.js
 
-Run the Server
+➥ Make sure the ./data/ directory exists with the following files:
 
-node server.js
+  ✔️ events.json: []
 
-Make sure the ./data/ directory exists with the following files:
+  ✔️ registrations.json: []
 
-events.json: []
-
-registrations.json: []
-
-count.json: []
+  ✔️ count.json: []
 
 ## **🚀 API Endpoints**
 Base Route: /api/events
@@ -77,15 +73,15 @@ GET /all
 Returns a list of all available events.
 
 ## **🛠 Possible Enhancements**
-Switch from file-based storage to a real database (MongoDB, PostgreSQL, etc.)
+ ● Switch from file-based storage to a real database (MongoDB, PostgreSQL, etc.)
 
-Add user authentication and authorization
+ ● Add user authentication and authorization
 
-Add attendance and feedback features
+ ● Add attendance and feedback features
 
-Use middleware for input validation
+ ● Use middleware for input validation
 
-Write tests with tools like Jest or Mocha
+ ● Write tests with tools like Jest or Mocha
 
 ## **👤 Author**
 GitHub: @shinitks
