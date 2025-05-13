@@ -1,15 +1,15 @@
-# ** Event Management API**
+# **Event Management API**
 A lightweight RESTful API built with Node.js and Express.js for managing college events. It supports:
 
-Event creation
+.Event creation
 
-Participant registration
+.Participant registration
 
-Capacity tracking
+.Capacity tracking
 
-Event updating and deletion
+.Event updating and deletion
 
-JSON file-based data storage (no database needed)
+.JSON file-based data storage (no database needed)
 
 ## **📁 File-Based Storage**
 Data is stored in local JSON files:
@@ -23,12 +23,15 @@ Data is stored in local JSON files:
 # **⚙️ Setup Instructions**
 Clone the Repository
 git clone https://github.com/shinitks/Event-_Management-_API
+
 cd Event-_Management-_API
 
 Install Dependencies
+
 npm install
 
 Run the Server
+
 node server.js
 
 Make sure the ./data/ directory exists with the following files:
@@ -44,27 +47,33 @@ Base Route: /api/events
 
 ### **Create Event**
 POST /create
+
 Creates a new event.
 
 
 ### **Register for an Event**
 POST /register/:id
+
 Registers a student for a specific event by ID.
 
 ### **Update Event**
 PUT /update/:id
+
 Updates fields such as capacity or venue for a specific event.
 
 ### **Delete Event**
 DELETE /:id
+
 Deletes an event and its associated registration and count data.
 
 ### **Get Event by ID**
 GET /:id
+
 Fetches details of a specific event.
 
 ### **Get All Events**
 GET /all
+
 Returns a list of all available events.
 
 ## **🛠 Possible Enhancements**
